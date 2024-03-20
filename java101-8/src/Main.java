@@ -39,9 +39,18 @@ public class Main {
                     n1 = input.nextDouble();
                     System.out.println("Bölüm'ü(n2) giriniz: ");
                     n2 = input.nextDouble();
-                    sonuc = n1 / n2;
-                    System.out.println("İşleminizin sonucu: " + sonuc);
-                    break;
+                    if(n1!=0 && n2!=0) {
+
+                        sonuc = n1 / n2;
+                        System.out.println("İşleminizin sonucu: " + sonuc);
+                        break;
+                    }
+                    else{
+                        System.out.println("Lütfen 0'dan başka bir sayı giriniz." +
+                                "\nÇünkü 0/0 Belirsizdir\n" +
+                                "Sayı / 0 yada 0 / Sayı ise Tanımsızdır.");
+                        break;
+                    }
                 case 4:
                     System.out.println("Çarpma İşlemi Yapmaktasınız.(n1 x n2)...");
                     System.out.println("İlk(n1) sayıyı giriniz: ");
