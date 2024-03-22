@@ -25,17 +25,18 @@ public class Main {
                             money = input.nextInt();
                             if (money > balance) {
                                 System.out.println("Insufficient Balance ");
-                                break;
+
                             } else {
                                 balance -= money;
                                 System.out.println("Successful Withdrawal!\nYou have " + balance + " left in your account.");
-                                System.out.println("If you want to go to the main menu, please press '0'..");
-                                 menu=input.nextInt();
-                                if(menu==0){
-                                    check=false;
-                                }else{
-                                    check=true;
-                                }
+
+                            }
+                            System.out.println("If you want to go to the main menu, please press '0'..");
+                            menu=input.nextInt();
+                            if(menu==0){
+                                check=false;
+                            }else{
+                                check=true;
                             }
                             break;
 
